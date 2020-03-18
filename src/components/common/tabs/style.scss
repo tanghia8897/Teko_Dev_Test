@@ -1,0 +1,56 @@
+.custom-tabs{
+    .tab-bar{
+        box-shadow: none !important;
+        background: none;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        background: #fff;
+        transition: all 0.2s ease-in-out;
+        > .back{
+            position: absolute;
+            background: #fff;
+            z-index: 1;
+            padding-right: 5px;
+            opacity: 1;
+        }
+        > .next{
+            position: absolute;
+            background: #fff;
+            z-index: 1;
+            padding-right: 5px;
+            right: 0px;
+            opacity: 1;
+        }
+        > div{
+            >div{
+                > div{
+                    overflow: scroll;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+
+    
+
+    .react-swipeable-view-container{
+        > div{
+            > div{
+                font-size: 15px;
+                padding: 10px 0px !important;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0px;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,101 @@
+.custom-input{
+    position: relative;
+    img{
+        width: 30px !important;
+        height: 30px !important;
+        display: inline-block;
+        padding: 7px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        animation: fadeIn 0.3s ease-in-out
+    }
+    > div{
+        position: relative;
+        display: inline-block;
+        input,
+        span,
+        textarea{
+            -webkit-appearance: none;
+            margin: 0px;
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            border: none;
+            font-size: inherit;
+            font-family: inherit;
+            color: inherit;
+            background: none;
+            width: 100%;
+            padding: 5px;
+        }
+        >div>i{
+            background: #EBEBEB;
+            cursor: pointer;
+            color: #D1D1BD;
+            right: 0px;
+            line-height: 30px;
+            box-sizing: border-box;
+            height: 30px;
+            position: absolute;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        textarea{
+            resize: vertical;
+            width: 100% !important;
+            min-height: 50px;
+        }
+        
+    }
+    .text-danger{
+        font-size: 12px;
+        > span{
+            display: inline;
+        }
+    }
+    .text-danger.show{
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        color:rgb(239, 69, 2) ;
+        background: #fff4f2;
+        padding: 0px 10px;
+    }
+    > div.view{
+        .text-danger{
+            display: none;
+        }
+    }
+    > div.edit::after,
+    > div.error::after{
+        content: "";
+        border-bottom: 1px solid #02C0EF;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0px;
+        animation: active 0.3s ease-in-out;
+    }
+    > div.edit.error::after{
+        border-bottom: 1px solid rgb(239, 69, 2);
+    }
+  
+}
+
+@keyframes active {
+    from {width: 0px}
+    to {width: 100%;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes expand{
+    from {height: 0px;}
+    to {height: 30px;}
+}

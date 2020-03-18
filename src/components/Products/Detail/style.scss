@@ -1,0 +1,260 @@
+.product-detail{
+    // padding: 0 12pt;
+    >.nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0 10px 0;
+        border-bottom: 2px solid #ccc;
+        padding: 0 12pt;
+        >i{
+            font-size: 24pt;
+        }
+        button{
+            svg{
+                
+            }
+            .MuiBadge-root{
+                .MuiBadge-colorSecondary {
+                    background-color: #df2020;
+                }
+            }
+        }
+        >div{
+            text-align: center;
+            >h5{
+                font-size: 13pt;
+                line-height: 18pt;
+                font-family: sf-semibold;
+            }
+            >b{
+                color: #df2020;
+                font-size: 13pt;
+                line-height: 19pt;
+                font-family: sf-semibold;
+            }
+        }
+    }
+    .product-content{
+        font-size: 25pt;
+        span{
+            color: #8f9598;
+            font-size: 12pt;
+            line-height: 16pt;
+            font-family: sf-regular;
+        }
+        .product-decription{
+            padding: 12pt;
+            border-bottom: 15px solid #eef1f3;
+            h4{
+                font-size: 17pt;
+                line-height: 22pt;
+            }
+            >div>a{
+                font-size: 12pt;
+                line-height: 16pt;
+            }
+            .status{
+                padding: 3pt 8pt;
+                background-color: #eef1f3;
+                border-radius: 15pt;
+            }
+            .price{
+                >b{
+                    color: #df2020;
+                    font-family: sf-semibold;
+                    font-size: 17pt;
+                    line-height: 22pt;
+                }
+                >span{
+                    text-decoration: line-through;
+                    padding: 0 20px;
+                }
+            }
+        }
+        .carousel-image{
+            .carousel-container{
+                ul{
+                    >li{
+                        &.react-multi-carousel-dot{
+                            >button{
+                                // width: 20px;
+                                // height: 20px;
+                                background-color: #eef1f3;
+                                border-radius: 10px;
+                                margin: 0 5px;
+                                border-color: #eef1f3;
+                            }
+                        }
+                        &.react-multi-carousel-dot--active{
+                            >button{
+                                background-color: #df2020;
+                            }
+                        }
+                    }
+                    &.react-multi-carousel-track {
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+            }   
+            .react-multi-carousel-track {
+                
+                >li{
+                    background-color: white;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    >img{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+        .custom-tabs{
+            padding: 12pt;
+            border-bottom: 15px solid #eef1f3;
+            .MuiTabs-flexContainer {
+                align-items: center;
+                justify-content: space-between;
+                .MuiTab-root{
+                    text-transform: unset;
+                    max-width: unset;
+                }
+                .Mui-selected{
+                    >span{
+                        color: black;
+                    }
+                }
+                button:last-child{
+                    margin-right: 0 !important;
+                }
+                >button{
+                    padding: 0;
+                    margin-right: 10px;
+                }
+                
+            }
+            .tab-bar > div > div > div {
+                overflow: unset;
+            }
+            .MuiTabs-indicator{
+                background-color: #df2020;
+            }
+            .spectifications{
+                .collapse{
+                    &.show{
+                        max-height: 225px;
+                        overflow: hidden;
+                        position: relative;
+                        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                    }
+                    ul{
+                        margin-top: 20px;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 8pt 12pt;
+                            >span, div{   
+                                font-size: 14pt;
+                                line-height: 19pt;
+                            }
+                        }
+                        li:nth-child(odd) {
+                            background:#eef1f3
+                        }
+                        li:first-child {
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                        }
+                    }
+                }
+                >.show-more{
+                    font-size: 13pt;
+                    line-height: 18pt;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #1e75f6;
+                    >i{
+                        font-size: 16pt;
+                        color: #1e75f6;
+                    }
+                }
+            }
+        }
+        .product-same-type{
+            padding: 0 0 12pt 12pt;
+            border-bottom: 15px solid #eef1f3;
+            ul{
+                li{
+                    &.react-multi-carousel-item {
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    div{
+                        font-size: 14pt;
+                        line-height: 19pt;
+                    }
+                    >div{
+                        .price{
+                            font-size: 14pt;
+                            line-height: 19pt;
+                            padding: 20px 0;
+                            >span{
+                                text-decoration: line-through;
+                            }
+                            >b{
+                                display: block;
+                                color: #df2020;
+                                font-family: sf-semibold;
+                                font-size: 14pt;
+                                line-height: 19pt;
+                            }
+                        }
+                    }
+                }
+                &.react-multi-carousel-track {
+                    display: flex;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+    .cart-info{
+        display: flex;
+        i{
+            font-size: 24pt;
+            color: gray;
+        }
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 15pt;
+        }
+        >div:nth-child(2){
+            i{
+                color: white;
+            }
+            b{
+                color: white;
+                font-family: sf-semibold;
+                font-size: 15pt;
+                line-height: 20pt;
+            }
+            background-color: #df2020;
+            background: linear-gradient(90deg, #df2020 0%, #e23939 35%, #d4721e 100%);
+            padding: 12pt 0;
+            margin: 8pt;
+            border-radius: 12px;
+        }
+    }
+    sup{
+        vertical-align: sub;
+        font-size: smaller;
+    }
+}

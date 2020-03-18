@@ -1,0 +1,124 @@
+@font-face {
+    font-family: sf-regular;
+    src: url('../../assets//fonts/FontsFree-Net-SFProText-Regular.ttf');
+  }
+@font-face {
+    font-family: sf-semibold;
+    src: url('../../assets//fonts/FontsFree-Net-SFProText-Semibold.ttf');
+}
+body{
+    font-size: 14px;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: sf-regular;
+}
+.main{
+    >.search-bar{
+        background-color: #df2020;
+        position: fixed;
+        height: 100px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        >div{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            position: absolute;
+            width: 90vw;
+            bottom: 10px;
+            transform: translate(5.5%);
+            border-radius: 10px;
+            >i{
+                padding: 4pt 8pt;
+                font-size: 24pt;
+                color: #df2020;
+            }
+            .custom-input{
+                line-height: 0;
+                input{
+                    height: 100%;
+                    font-size: 14pt;
+                    line-height: 19pt;
+                }
+            }
+            
+        }
+    }
+    .product{
+        padding-top: 100px;
+        .product-cart{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            background-color: white;
+            border-bottom: 5px solid #ddd;
+            padding: 12pt;  
+            >img{
+                width: 25%;
+                height: auto;
+            }
+            >div{
+                margin-left: 8pt;
+                >p{
+                    // text-align: justify;
+                    font-size: 14pt;
+                    line-height: 19pt;
+                }
+                b{
+                    color: #df2020;
+                    display: block;
+                }
+                .price{
+                    font-size: 15pt;
+                    line-height: 27pt;
+                    font-family: sf-semibold;
+                }
+                >div{
+                    display: flex;
+                    align-items: center;
+                    .promotion_price{
+                        text-decoration: line-through;
+                        color: #6f6f6f;
+                        font-size: 12pt;
+                        line-height: 16pt;
+                        margin-right: 20px;
+                    }
+                    #pointer {
+                        width: 29pt;
+                        height: 15pt;
+                        position: relative;
+                        background: #df2020;
+                        color: white;
+                        line-height: 16pt;
+                        font-size: 10pt;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                      }
+                      #pointer:after {
+                        content: "";
+                        position: absolute;
+                        left: -7.5pt;
+                        border-right: 7.5pt solid #df2020;
+                        border-top: 7.5pt solid transparent;
+                        border-bottom: 7.5pt solid transparent;
+                      }
+                }
+            }
+        }
+    }
+    
+}
+
+.custom-input>.edit:after {
+    content: none!important;
+}
+.custom-input{
+    height: 100%;
+    width: 100%;
+    input{
+        margin: 0;
+        padding: 0 !important;
+    }
+}
